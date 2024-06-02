@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <style>
+     body,html
+     {
+        background-color: #F1F4FFFF;
+     }
+      *{
+       font-family: cursive;
+       font-size: 20px;
+       margin: 5px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+    }
+    input{
+        border-radius: 4px;
+    }
+    input[type='submit']
+    {
+        background-color: transparent;
+        border: solid 2px;
+        border-radius: 5px;
+        width: 200px;
+        margin: 10px;
+        background-color: white;
+    }
+    input[type='submit']:hover{
+        border: solid 2px rgb(0, 196, 121);
+        color: rgb(0, 196, 121);
+    } 
+ </style>
+</head>
+<body>
+<h1>ajouter un nouvel carnet</h1><br><br><br>
+
+        <form action="../pageAdd" method="post">
+           <label>le nom</label>
+           <input type="text" name="nom" > <br>
+           <label>la ville</label>
+           <input type="text" name="ville">  
+           <label>le nom de Rue</label>          
+           <input type="text" name="nomRue"> 
+           <label>le numero de Rue</label>  
+           <input type="number" name="numRue">
+           <input type="submit" value="ajouter" name="b1" />
+        </form>
+</body>
+</html>

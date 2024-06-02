@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+   <Resource name="jdbc/msdtp1" auth="Container"
+       type="javax.sql.DataSource" 
+       username="root" password=""
+       driverClassName="org.apache.derby.jdbc.ClientDriver"
+       url="jdbc:derby://localhost:3306/msdtp1" 
+       maxActive="8"    /> 
+</Context> 
